@@ -16,5 +16,4 @@ fun main() {
     // Perhitungan Diskon
     val discount = calculateDiscount(price)
     val finalPrice = price - discount
-
 }
