@@ -52,7 +52,6 @@ fun main() {
         }
         println()
     }
-
     // 4. Pengumuman Pemenang
     println("\n=== HASIL AKHIR ===")
     if (hero.isAlive() && enemyHp == 0) {
