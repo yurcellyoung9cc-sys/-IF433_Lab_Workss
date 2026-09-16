@@ -8,6 +8,15 @@ fun calculateDiscount(price: Int): Int {
     }
 }
 
+fun printReceipt(title: String, originalPrice: Int, finalPrice: Int, note: String?) {
+    println("=== STRUK PEMBELIAN STEAMKW ===")
+    println("Judul Game : $title")
+    println("Harga Asli : Rp $originalPrice")
+    println("Harga Akhir: Rp $finalPrice")
+
+    println("Catatan    : ${note ?: "Tidak ada catatan"}")
+}
+
 fun main() {
     // Langkah 1: Persiapan Data
     val gameTitle = "Elden Ring"
@@ -16,4 +25,15 @@ fun main() {
     // Perhitungan Diskon
     val discount = calculateDiscount(price)
     val finalPrice = price - discount
+
+    val userNote: String? = null
+
+
+    printReceipt(
+        title = gameTitle,
+        originalPrice = price,
+        finalPrice = finalPrice,
+        note = userNote
+    )
+
 }
