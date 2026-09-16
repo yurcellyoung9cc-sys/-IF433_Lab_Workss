@@ -7,9 +7,8 @@ fun main(args: Array<String>) {
 // Calculation
     val area = pi * radius * radius
 
-    // Output Concatenation
-    println("Radius: $radius, Area: \$area")
 
+    println("Radius: $radius, Area: \$area")
     // Logic check
     checkSize(area)
 }
