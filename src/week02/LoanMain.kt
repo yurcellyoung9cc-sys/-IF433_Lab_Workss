@@ -22,7 +22,6 @@ fun main() {
         println("WARNING: Lama pinjam tidak boleh minus! Otomatis diubah menjadi 1 hari.")
         duration = 1
     }
-
     // 3. Buat objek Loan dan Print detail
     val loan = Loan(bookTitle, borrower, duration)
 
