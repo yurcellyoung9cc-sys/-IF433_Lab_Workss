@@ -3,7 +3,6 @@ package oop_00000054092_YurcellY.week01
 
 fun checkSize(area: Double) = if (area > 100) "This is a Big Circle" else "This is a Small Circle"
 
-
 fun main() {
 
     val radius = 7.0
@@ -12,7 +11,6 @@ fun main() {
     val area = pi * radius * radius
 
     println("Radius: $radius, Area: $area")
-
 
     println(checkSize(area))
 }
