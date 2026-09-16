@@ -1,6 +1,5 @@
 package week02
 
-
 // Class Loan dengan Primary Constructor & Default Argument loanDuration = 1
 class Loan(
     val bookTitle: String,
