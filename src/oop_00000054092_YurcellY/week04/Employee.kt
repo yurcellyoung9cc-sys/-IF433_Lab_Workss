@@ -1,5 +1,3 @@
-#!/usr/bin/env kotlin
-
 package week04
 
 open class Employee(val name: String, val baseSalary: Int) {
