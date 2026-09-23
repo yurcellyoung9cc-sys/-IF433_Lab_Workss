@@ -1,5 +1,6 @@
 package week04
 
+
 // Child class dari Car dengan constructor chaining
 class ElectricCar(
     brand: String,
