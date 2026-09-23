@@ -9,6 +9,5 @@ class Developer(
     override fun work() {
         println("$name sedang ngoding menggunakan $programmingLanguage.")
     }
-
     // calculateBonus() tidak di-override karena mengikuti aturan bawaan Parent
 }
