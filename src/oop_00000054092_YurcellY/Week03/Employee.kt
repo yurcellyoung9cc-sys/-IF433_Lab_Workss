@@ -1,4 +1,4 @@
-package Week03
+package oop_00000054092_YurcellY.Week03
 
 class Employee(val name: String) {
     // Standard property dengan Custom Setter menggunakan Backing Field (field)

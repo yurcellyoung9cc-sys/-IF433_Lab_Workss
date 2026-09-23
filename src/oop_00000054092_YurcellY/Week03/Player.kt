@@ -1,4 +1,4 @@
-package Week03
+package oop_00000054092_YurcellY.Week03
 
 class Player(val username: String) {
     // Private property: tidak bisa diubah langsung dari luar
