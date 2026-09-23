@@ -23,11 +23,11 @@ fun main() {
         duration = 1
     }
     // 3. Buat objek Loan dan Print detail
-    val loan = Loans(bookTitle, borrower, duration)
+   // val loan = Loans(bookTitle, borrower, duration)
 
-    println("\n=== DETAIL PEMINJAMAN ===")
-    println("Judul Buku  : ${loan.bookTitle}")
-    println("Peminjam    : ${loan.borrower}")
-    println("Lama Pinjam : ${loan.loanDuration} hari")
-    println("Total Denda : Rp ${loan.calculateFine()}")
+//    println("\n=== DETAIL PEMINJAMAN ===")
+//    println("Judul Buku  : ${loan.bookTitle}")
+//    println("Peminjam    : ${loan.borrower}")
+//    println("Lama Pinjam : ${loan.loanDuration} hari")
+//    println("Total Denda : Rp ${loan.calculateFine()}")
 }
