@@ -7,6 +7,7 @@ fun main() {
     generalVehicle.honk()
     generalVehicle.accelerate()
 
+
     println("\n--- Testing Car ---")
     val myCar = Car(brand = "Toyota", numberOfDoors = 4)
     myCar.openTrunk()   // Memanggil method milik sendiri
