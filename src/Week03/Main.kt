@@ -31,7 +31,6 @@ fun main() {
 
     println("\n=== TUGAS 2: PLAYER ===")
     val player = Player("Knight99")
-
     // player.xp = 100 // Ini akan Error karena property xp bersifat private
 
     // Penambahan XP Pertama (+50 XP -> Total: 50, Level 1)
