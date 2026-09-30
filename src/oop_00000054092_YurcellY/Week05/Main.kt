@@ -60,7 +60,6 @@ fun main() {
     for (payment in daftarPembayaran) {
         // Coba transaksi sebesar 75.000
         payment.processPayment(75000.0)
-
         // Smart Casting Challenge (Jika EWallet gagal karena saldo kurang)
         if (payment is EWallet && payment.balance < 75000.0) {
             payment.topUp(50000.0) // Top up otomatis
