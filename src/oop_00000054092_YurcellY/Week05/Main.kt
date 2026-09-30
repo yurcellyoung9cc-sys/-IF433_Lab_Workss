@@ -54,7 +54,6 @@ fun main() {
 
     val myWallet = EWallet(accountName = "John Thor", balance = 50000.0)
     val myCard = CreditCard(accountName = "John Thor", limit = 100000.0)
-
     // Menghapus deklarasi : List manual
     val daftarPembayaran = listOf(myWallet, myCard)
 
