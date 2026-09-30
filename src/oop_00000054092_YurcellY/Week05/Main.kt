@@ -10,8 +10,8 @@ fun main() {
     val dosen1 = Dosen(nama = "Pak Alex", nidn = "0123456")
     val admin1 = Admin(nama = "Bu Siti")
 
-    // Polymorphic Collection: List yang berisi tipe Parent, tapi isinya objek Anak
-    val daftarPegawai: List = listOf(dosen1, admin1)
+    // Polymorphic Collection: Menghapus deklarasi : List manual
+    val daftarPegawai = listOf(dosen1, admin1)
 
     println("=== AKTIVITAS PEGAWAI ===")
     for (pegawai in daftarPegawai) {
@@ -33,6 +33,7 @@ fun main() {
         }
         println()
     }
+
     println("==================================================")
     println("     TUGAS MANDIRI 1: COMPILE-TIME POLYMORPHISM   ")
     println("==================================================")
@@ -51,23 +52,20 @@ fun main() {
     println("      TUGAS MANDIRI 2: SISTEM PEMBAYARAN         ")
     println("==================================================")
 
-    val eWallet = EWallet(accountName = "John Thor", balance = 50000.0)
-    val creditCard = CreditCard(accountName = "John Thor", limit = 100000.0)
+    val myWallet = EWallet(accountName = "John Thor", balance = 50000.0)
+    val myCard = CreditCard(accountName = "John Thor", limit = 100000.0)
 
-    val paymentList: List = listOf(eWallet, creditCard)
+    // Menghapus deklarasi : List manual
+    val daftarPembayaran = listOf(myWallet, myCard)
 
-    val nominalBayar = 75000.0
+    for (payment in daftarPembayaran) {
+        // Coba transaksi sebesar 75.000
+        payment.processPayment(75000.0)
 
-    for (payment in paymentList) {
-        println("Memproses pembayaran sebesar Rp$nominalBayar...")
-        val sukses = payment.processPayment(nominalBayar)
-
-        // Smart Casting Challenge (Handling kegagalan transaksi pada EWallet)
-        if (!sukses && payment is EWallet) {
-            println("-> [Smart Cast Recovery] Mencoba melakukan TopUp sebesar Rp50000.0 ke EWallet...")
-            payment.topUp(50000.0)
-            println("-> Mencoba ulang proses pembayaran...")
-            payment.processPayment(nominalBayar)
+        // Smart Casting Challenge (Jika EWallet gagal karena saldo kurang)
+        if (payment is EWallet && payment.balance < 75000.0) {
+            payment.topUp(50000.0) // Top up otomatis
+            payment.processPayment(75000.0) // Coba bayar ulang
         }
         println("--------------------------------------------------")
     }
