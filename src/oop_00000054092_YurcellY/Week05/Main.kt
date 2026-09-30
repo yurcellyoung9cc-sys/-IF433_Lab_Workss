@@ -52,6 +52,7 @@ fun main() {
     println("      TUGAS MANDIRI 2: SISTEM PEMBAYARAN         ")
     println("==================================================")
 
+
     val myWallet = EWallet(accountName = "John Thor", balance = 50000.0)
     val myCard = CreditCard(accountName = "John Thor", limit = 100000.0)
     // Menghapus deklarasi : List manual
