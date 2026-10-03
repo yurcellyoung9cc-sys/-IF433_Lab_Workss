@@ -6,7 +6,7 @@ class SmartLamp(
 ) : SmartDevice, Switchable {
 
     override fun turnOn() {
-        println("Lampu '$name' dinyalakan dengan kecerahan maksimal.")
+        println("Lampu '$name' dinyalakan.")
     }
 
     override fun turnOff() {
