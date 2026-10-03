@@ -6,6 +6,7 @@ fun processCheckout(method: PaymentMethod, amount: Double) {
     method.pay(amount)
 }
 
+
 fun main() {
     println("=== TESTING LATIHAN TERBIMBING ===")
     val myWatch = Smartwatch()
