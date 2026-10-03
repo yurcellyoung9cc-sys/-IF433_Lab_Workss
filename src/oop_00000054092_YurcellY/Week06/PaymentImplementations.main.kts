@@ -1,4 +1,4 @@
-#!/usr/bin/env kotlin
+package oop_00000054092_YurcellY.week06
 
 class Gopay : PaymentMethod {
     override fun pay(amount: Double) {
