@@ -1,6 +1,7 @@
 package oop_00000054092_Yurcelly.week06
 
 class SmartHomeHub {
+    // Diperbaiki: Tambahkan  di mutableListOf
     val devices = mutableListOf()
 
     fun addDevice(device: SmartDevice) {
@@ -16,7 +17,6 @@ class SmartHomeHub {
             }
         }
     }
-
 
     fun activateSecurityMode() {
         println("\n--- Mengaktifkan Mode Keamanan ---")

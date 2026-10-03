@@ -1,4 +1,4 @@
-package oop_00000054092_YurcellY.week06
+package oop_00000054092_Yurcelly.week06
 
 interface SmartDevice {
     val id: String
@@ -10,9 +10,11 @@ interface Switchable {
     fun turnOff()
 }
 
+// Pastikan bagian ini ada:
 interface Recordable {
     fun startRecord()
     fun stopRecord() {
         println("Perekaman dihentikan dan disimpan ke Cloud.")
     }
 }
+
