@@ -10,11 +10,9 @@ interface Switchable {
     fun turnOff()
 }
 
-// Pastikan bagian ini ada:
 interface Recordable {
     fun startRecord()
     fun stopRecord() {
         println("Perekaman dihentikan dan disimpan ke Cloud.")
     }
 }
-
