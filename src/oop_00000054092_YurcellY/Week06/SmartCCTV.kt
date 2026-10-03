@@ -6,16 +6,15 @@ class SmartCCTV(
 ) : SmartDevice, Switchable, Recordable {
 
     override fun turnOn() {
-        println("CCTV '$name' aktif.")
-        startRecord() // Otomatis mulai merekam saat menyala
+        println("CCTV '$name' dinyalakan.")
+        startRecord() // Memanggil fungsi startRecord otomatis
     }
 
     override fun turnOff() {
-        stopRecord()
         println("CCTV '$name' dimatikan.")
     }
 
     override fun startRecord() {
-        println("CCTV '$name' mulai merekam video keamanan.")
+        println("CCTV '$name' mulai merekam video.")
     }
 }
