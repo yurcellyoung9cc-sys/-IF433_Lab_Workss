@@ -1,5 +1,6 @@
 package oop_00000054092_YurcellY.week06
 
+
 // LANGKAH 1 (Trial - Sengaja Error):
 // Un-comment kode di bawah untuk mencoba error backing field pada Interface:
 /*
