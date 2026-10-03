@@ -1,4 +1,4 @@
-#!/usr/bin/env kotlin
+package oop_00000054092_Yurcelly.week06
 
 class SmartLamp(
     override val id: String,

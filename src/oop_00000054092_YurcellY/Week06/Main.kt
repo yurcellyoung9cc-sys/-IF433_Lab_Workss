@@ -1,4 +1,4 @@
-#!/usr/bin/env kotlin
+package oop_00000054092_Yurcelly.week06
 
 // Fungsi Decoupled Latihan Terbimbing 4
 fun processCheckout(method: PaymentMethod, amount: Double) {
