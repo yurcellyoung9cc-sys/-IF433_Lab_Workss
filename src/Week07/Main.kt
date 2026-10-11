@@ -53,6 +53,7 @@ fun main() {
     // 3. Modifikasi Immutability (Copy) & Event Dispatch
     val upgradedItem = starterWeapon.item.copy(damage = 25)
 
+
     processEvent(BattleState.SafeZone)
     processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
     processEvent(BattleState.LootDropped(upgradedItem))
