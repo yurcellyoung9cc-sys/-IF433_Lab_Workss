@@ -2,6 +2,7 @@ package Week07
 
 class NetworkClient private constructor(val url: String) {
 
+
     companion object {
         const val BASE_URL = "https://api.umn.ac.id" // Shared constant
 
