@@ -10,7 +10,6 @@ class NetworkClient private constructor(val url: String) {
             return NetworkClient(BASE_URL)
         }
     }
-
     fun connect() {
         println("Connecting to $url...")
     }
