@@ -1,5 +1,6 @@
 package Week07
 
+
 enum class ItemRarity(val dropChance: Int) {
     COMMON(70),
     UNCOMMON(45),
