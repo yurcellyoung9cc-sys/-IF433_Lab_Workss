@@ -11,6 +11,7 @@ fun main() {
     mapOf("name" to "Ghost Item", "type" to "CLOTHING"),
     mapOf("id" to "X01", "name" to "Unknown", "type" to "FOOD")
     )
+
     // Instansiasi ApiParser
     val parser = ApiParser()
 
