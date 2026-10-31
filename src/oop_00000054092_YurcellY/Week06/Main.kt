@@ -1,4 +1,4 @@
-package oop_00000054092_Yurcelly.week06
+package oop_00000054092_YurcellY.Week06
 
 // Fungsi Decoupled Latihan Terbimbing 4
 fun processCheckout(method: PaymentMethod, amount: Double) {

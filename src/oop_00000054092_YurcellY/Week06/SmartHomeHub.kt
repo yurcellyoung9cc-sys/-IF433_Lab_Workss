@@ -1,32 +1,18 @@
 package oop_00000054092_Yurcelly.week06
 
 class SmartHomeHub {
-    val devices = mutableListOf()
+    private val devices = mutableListOf<SmartDevice>()
 
     fun addDevice(device: SmartDevice) {
         devices.add(device)
-        println("Berhasil menambahkan '${device.name}' ke SmartHomeHub.")
+        println("Perangkat ${device.name} ditambahkan ke Hub.")
+    }
+
+    fun activateSecurityMode() {
+        println("Mode Keamanan diaktifkan pada Smart Home Hub.")
     }
 
     fun turnOffAllSwitches() {
-        println("\n--- Mematikan Semua Perangkat ---")
-        for (device in devices) {
-            if (device is Switchable) {
-                device.turnOff() // Smart Cast ke Switchable
-            }
-        }
-    }
-
-
-    fun activateSecurityMode() {
-        println("\n--- Mengaktifkan Mode Keamanan ---")
-        for (device in devices) {
-            if (device is Recordable) {
-                device.startRecord() // Smart Cast ke Recordable
-            }
-            if (device is SmartSpeaker) {
-                device.playMusic("Sirine Peringatan") // Smart Cast ke SmartSpeaker
-            }
-        }
+        println("Mematikan semua perangkat melalui Smart Home Hub.")
     }
 }
