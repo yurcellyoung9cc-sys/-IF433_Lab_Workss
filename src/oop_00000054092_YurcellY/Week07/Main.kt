@@ -1,4 +1,4 @@
-package Week07
+package oop_00000054092_YurcellY.Week07
 
 fun main() {
     // --- TEST LAB 1: Singleton & Companion Object ---
