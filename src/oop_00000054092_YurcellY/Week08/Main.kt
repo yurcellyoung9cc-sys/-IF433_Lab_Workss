@@ -11,7 +11,7 @@ fun main() {
     println("\n=== TEST LET BLOCK ===")
     val validOrder = Order(null, 250000)
     val receipt = validOrder.totalPrice?.let { price ->
-        // Blok ini HANYA jalan jika totalPrice tidak null
+        // Blok ini HANYA jalan jika totalPrice tidak null (tambahkan tanda *)
         val tax = price * 0.11
         "Transaksi Valid. Harga: Rp$price, Pajak: Rp$tax"
     } ?: "Transaksi Invalid: Harga belum di-set!"
@@ -63,7 +63,7 @@ fun main() {
     // Kita menekan tombol !! karena KITA TAHU implementasi Java-nya aman
     val statusLength = javaResponse!!.length
     println("Status dari Java: $javaResponse (Length: $statusLength)")
+
     // Menjalankan simulasi Unit Test
     runMockUnitTest()
-
 }
