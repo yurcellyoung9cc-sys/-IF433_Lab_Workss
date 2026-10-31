@@ -23,6 +23,7 @@ class ApiParser {
         }
     }
 
+
     fun checkout(product: Product) {
         val id = when (product) {
             is Product.Electronic -> product.id
