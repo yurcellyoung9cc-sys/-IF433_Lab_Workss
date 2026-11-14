@@ -3,6 +3,12 @@ package oop_00000054092_YurcellY.Week10
 fun main() {
     // Inisialisasi dan pengisian data koin
     val coinRepo = WalletRepository<Coin>()
+
+    // Mengisi minimal 3 koin ke dalam coinRepo
+    coinRepo.add(Coin("BTC", 1.5))
+    coinRepo.add(Coin("ETH", 12.0))
+    coinRepo.add(Coin("USDT", 2500.0))
+
     coinRepo.add(Coin("BTC", 2.5))
     coinRepo.add(Coin("ETH", 15.0))
     coinRepo.add(Coin("USDT", 1000.0))
