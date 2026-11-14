@@ -9,6 +9,7 @@ fun main() {
     coinRepo.add(Coin("ETH", 12.0))
     coinRepo.add(Coin("USDT", 2500.0))
 
+
     // 7. Simulasi Response Jaringan
     val response = ApiResponse("200 OK", coinRepo.getAll())
 
