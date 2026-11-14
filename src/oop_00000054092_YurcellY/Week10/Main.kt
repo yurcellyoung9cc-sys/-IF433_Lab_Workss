@@ -1,7 +1,5 @@
 package oop_00000054092_YurcellY.Week10
 
-package oop_00000054092_YurcellY.Week10
-
 fun main() {
     // 1. Test Generic Class
     println("=== TEST GENERIC CLASS ===")
