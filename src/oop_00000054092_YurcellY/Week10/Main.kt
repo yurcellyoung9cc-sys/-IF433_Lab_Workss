@@ -19,6 +19,7 @@ fun main() {
     val result = processData("Stable Coin")
     println("Hasil proses: $result")
 
+
     // 4. Test Constraints
     println("\n=== TEST CONSTRAINTS ===")
     val math = MathBox(10.5, 20)
