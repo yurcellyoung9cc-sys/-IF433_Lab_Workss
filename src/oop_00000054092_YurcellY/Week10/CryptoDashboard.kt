@@ -20,6 +20,7 @@ fun main() {
         println("- Koin: ${coin.name}, Saldo: ${coin.balance}")
     }
 
+
     // 9. Inisialisasi dan Pengisian Data Transaksi
     val txRepo = WalletRepository<Transaction>()
     txRepo.add(Transaction("TX-001", 150.0))
