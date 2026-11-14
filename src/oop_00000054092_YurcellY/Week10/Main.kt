@@ -1,5 +1,7 @@
 package oop_00000054092_YurcellY.Week10
 
+package oop_00000054092_YurcellY.Week10
+
 fun main() {
     // 1. Test Generic Class
     println("=== TEST GENERIC CLASS ===")
@@ -8,7 +10,7 @@ fun main() {
     println("Isi intBox: ${intBox.value}")
     println("Isi stringBox: ${stringBox.value}")
 
-    // 2. Test Multiple Parameters
+    // 2. Test Multiple Parameters (PairBox)
     println("\n=== TEST MULTIPLE PARAMETERS ===")
     val itemPrice = PairBox("Bitcoin", 65000)
     println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value} USD")
