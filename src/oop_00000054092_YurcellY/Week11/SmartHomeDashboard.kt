@@ -45,6 +45,7 @@ fun main() {
         println("Jumlah perangkat terdaftar: ${this.size}")
     }
 
+
     // 9. Kalkulasi Daya dengan run
     val totalPower = homeDevices.run { sumOf { it.powerLoad } }
     println("Total daya: $totalPower Watt")
