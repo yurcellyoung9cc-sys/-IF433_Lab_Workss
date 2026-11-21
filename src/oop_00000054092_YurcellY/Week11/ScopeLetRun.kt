@@ -10,6 +10,7 @@ fun main() {
     }
     println("Panjang nama: $length")
 
+
     println("\n=== TEST RUN FUNCTION ===")
     val result = "Kotlin".run {
         println("Memproses kata: $this") // 'this' bisa dihilangkan (implicit)
