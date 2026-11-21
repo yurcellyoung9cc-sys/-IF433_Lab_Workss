@@ -1,5 +1,6 @@
 package oop_00000054092_YurcellY.Week11
 
+
 // Extension function dengan receiver 'this'
 fun String.addGreeting(): String {
     return "Hello, $this"
