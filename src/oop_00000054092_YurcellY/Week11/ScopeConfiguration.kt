@@ -8,8 +8,8 @@ fun main() {
         name = "Alex"
         age = 25
     }
-    println(user)
 
+    println(user)
     println("\n=== TEST ALSO ===")
     val numbers = mutableListOf(1, 2, 3)
     numbers.also {
