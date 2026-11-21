@@ -56,3 +56,4 @@ fun main() {
         println(device.diagnose())
     }
 }
+
