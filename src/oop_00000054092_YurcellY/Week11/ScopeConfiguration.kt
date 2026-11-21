@@ -28,4 +28,3 @@ fun main() {
     }.also {
         println("User baru berhasil dibuat: $it")
     }
-}
